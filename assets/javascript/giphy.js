@@ -1,4 +1,10 @@
+
+
 function displayInfo() {
+  var instrument = $(this).attr("data-instrument");
+  var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
+    instrument + "&api_key=dc6zaTOxFJmzC&limit=10";
+
   $.ajax({
       url: queryURL,
       method: "GET"
@@ -42,12 +48,7 @@ function displayInfo() {
 }
 $("button").on("click", function() {
       
-  var instrument = $(this).attr("data-instrument");
-
-      
-  var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-    instrument + "&api_key=dc6zaTOxFJmzC&limit=10";
-
+  
   displayInfo();
 });
 var newInstrument = ["Saxophone", "Flute", "Trumpet", "Synthesizer", "Guitar", "Drums", "Cello", "Bass", "Electric Violin", "Sitar"];
