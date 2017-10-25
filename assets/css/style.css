@@ -1,0 +1,23 @@
+.container {
+	background: url(../images/harmony.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family: 'Source Code Pro', monospace;
+	font-size: 18px;
+}
+
+h1 {
+	font-size: 55px;
+	margin-bottom: 20px;
+}
+
+button {
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.item {
+	float: left;
+}
