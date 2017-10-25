@@ -20,7 +20,7 @@ function displayInfo() {
         if (results[i].rating !== "r" && results[i].rating !== "pg-13") {
           var gifDiv = $("<div class='item'>");
           var rating = results[i].rating;
-          var p = $("<p>").text("Rating: " + rating);
+          var p = $("<p>").text("Rating: " + rating.toUpperCase());
           var instrumentImage = $("<img>");
           instrumentImage.attr("src", results[i].images.fixed_height_still.url);
           instrumentImage.attr("data-state", "still");
@@ -68,6 +68,7 @@ $("#add-instrument").on("click", function(event) {
   event.preventDefault();
 
   var instrument = $("#instrument-input").val().trim();
+  instrument = instrument.charAt(0).toUpperCase() + instrument.slice(1);
   newInstrument.push(instrument);
 
   renderButtons();
