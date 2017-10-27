@@ -37,4 +37,12 @@ form {
 
 #add-instrument {
 	margin-top: 8px;
+	border-style: solid;
+	border-color:  #66ffff;
+	background-color: #00cccc;
+}
+
+#instrument-input {
+	border-style: solid;
+	border-color: #ff751a;
 }
