@@ -51,7 +51,7 @@ $("button").on("click", function() {
   
   displayInfo();
 });
-var newInstrument = ["Saxophone", "Flute", "Trumpet", "Synthesizer", "Guitar", "Drums", "Cello", "Bass", "Electric Violin", "Sitar"];
+var newInstrument = ["Saxophone", "Flute", "Trumpet", "Guitar", "Drums", "Bass", "Electric Violin"];
 
 function renderButtons() {
   $("#instruments").empty();
